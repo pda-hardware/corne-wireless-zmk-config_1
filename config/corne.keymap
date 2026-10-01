@@ -15,6 +15,7 @@
         lr0 {
             bindings = <&tog 0>;
             key-positions = <8 19 21>;
+            timeout-ms = <50>;
         };
     };
 
