@@ -9,6 +9,15 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        lr0 {
+            bindings = <&tog 0>;
+            key-positions = <8 19 21>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -62,9 +71,9 @@
 
         layer_3 {
             bindings = <
-&trans  &kp Z  &kp D  &kp T   &kp H     &kp N        &kp S             &kp E   &kp B          &kp J      &kp G   &trans
-&trans  &kp F  &kp C  &kp L   &kp A     &kp U        &kp LEFT_BRACKET  &kp Q   &kp R          &kp K      &trans  &trans
-&trans  &kp P  &kp M  &kp W   &kp SEMI  &kp COMMA    &kp Y             &kp V   &kp LS(SLASH)  &kp SLASH  &trans  &trans
+&trans  &kp Z  &kp D  &kp T   &kp H     &kp N        &kp S             &kp E   &kp B          &kp J               &mt EQUAL G            &trans
+&trans  &kp F  &kp C  &kp L   &kp A     &kp U        &kp LEFT_BRACKET  &kp Q   &kp R          &mt LEFT_BRACKET K  &mt RIGHT_BRACKET SQT  &kp DOT
+&trans  &kp P  &kp M  &kp W   &kp SEMI  &kp COMMA    &kp Y             &kp V   &kp LS(SLASH)  &kp SLASH           &kp RS(N7)             &trans
                       &trans  &trans    &trans       &trans            &trans  &trans
             >;
         };
