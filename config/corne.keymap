@@ -59,5 +59,14 @@
                              &kp LGUI  &trans    &kp SPACE         &kp RET    &trans     &kp RALT
             >;
         };
+
+        layer_3 {
+            bindings = <
+&trans  &kp Z  &kp D  &kp T   &kp H     &kp N        &kp S             &kp E   &kp B          &kp J      &kp G   &trans
+&trans  &kp F  &kp C  &kp L   &kp A     &kp U        &kp LEFT_BRACKET  &kp Q   &kp R          &kp K      &trans  &trans
+&trans  &kp P  &kp M  &kp W   &kp SEMI  &kp COMMA    &kp Y             &kp V   &kp LS(SLASH)  &kp SLASH  &trans  &trans
+                      &trans  &trans    &trans       &trans            &trans  &trans
+            >;
+        };
     };
 };
